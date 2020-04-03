@@ -579,3 +579,25 @@ padding: 5px 11px;
   transform: scale(1.3);
 
 }
+
+.elements-grid {
+  width: auto;
+  height: auto;
+  display: flex;  
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-elements-grid {
+  width: 885px;
+  height: 800px;
+  background-color: rgb(6, 95, 212);
+}
+
+.right-elements-grid {
+  width: 215px;
+  height: 800px;
+  margin-right: 24px;
+  background-color: rgb(6, 212, 184);
+}
