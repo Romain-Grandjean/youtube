@@ -581,12 +581,16 @@ padding: 5px 11px;
 }
 
 .elements-grid {
-  width: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: auto;
   display: flex;  
   flex-flow: row nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  color: #616161;
 }
 
 .left-elements-grid {
@@ -596,8 +600,29 @@ padding: 5px 11px;
 }
 
 .right-elements-grid {
-  width: 215px;
+  width: auto;
   height: 800px;
-  margin-right: 24px;
   background-color: #F1F1F1;
+}
+
+.inner-right-elements-grid {
+  width: auto;
+  height: auto;
+  display: block;
+  margin-right: 24px;
+}
+
+.inner-right-elements-grid h1 {
+  color: #616161;
+  margin-top: 24px;
+  padding-bottom: 24px;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+.inner-right-elements-grid img {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
 }
