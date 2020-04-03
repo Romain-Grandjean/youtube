@@ -592,12 +592,12 @@ padding: 5px 11px;
 .left-elements-grid {
   width: 885px;
   height: 800px;
-  background-color: rgb(6, 95, 212);
+  background-color: #F1F1F1;
 }
 
 .right-elements-grid {
   width: 215px;
   height: 800px;
   margin-right: 24px;
-  background-color: rgb(6, 212, 184);
+  background-color: #F1F1F1;
 }
