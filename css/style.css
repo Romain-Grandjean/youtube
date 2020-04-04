@@ -604,7 +604,47 @@ padding: 5px 11px;
 .feature-video {
   width: 885px;
   height: auto;
+  padding: 24px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.feature-video iframe {
+  width: 400px;
+  height: 238px;
+}
+
+.feature-video-infos {
+  width: 400px;
+  height: 238px;
+}
+
+.top-element {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.top-element span {
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #030303;
+}
+
+.top-element p {
+
+  font-size: 13px;
+  font-weight: 400;
+  color: #606060;
+}
+
+
 
 
 .right-elements-grid {
