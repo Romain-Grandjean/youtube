@@ -20,7 +20,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
+
 }
+
 /* Header */
 
 .nav-bar {
@@ -433,33 +435,34 @@ padding: 5px 11px;
  overflow-y: scroll;
  scroll-behavior: auto;
  background-color:#F8F8F8;
- /* border: 1px red solid; */
 }
 
 .brand-zone {
-
   width: 100%;
   height: 100px;
   background-color:#F8F8F8;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  display: block;
+  /* flex-flow: row nowrap;
+  justify-content: center; */
   margin: 0;
   padding: 0;
-  /* border: 1px green solid; */
+}
+.brand-block {
 
+ padding: 16px 107px 4px 107px;
+ display: block;
+ width: 100%;
+ /* max-width: 1284px; */
 }
 
 .brand-banner {
-  /* max-width: 1284px; */
   height: 100%;
-  padding: 16px 9.19% 4px 9.19%;
+  width: 100%;
 
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  flex: 1;
 }
 
 .brand-banner img {
@@ -470,12 +473,11 @@ padding: 5px 11px;
 
 .brand-titling {
 
-  width: 89.5%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-
   align-items: center;
 
 }
@@ -485,7 +487,8 @@ padding: 5px 11px;
   height: 51px;
   display: flex;
   flex-flow: column;
-  justify-content:center;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .brand-title{
@@ -493,11 +496,17 @@ padding: 5px 11px;
   font-size: 24px;
   font-weight: 400;
   color: #030303;
+  padding-left: 24px;
+
+
 }
 
 .brand-subscribers{
   font-size: 14px;
   color: #606060;
+  padding-left: 24px;
+  padding-bottom: 1.5px;
+
 }
 
 .button-subscribe {
@@ -506,16 +515,13 @@ padding: 5px 11px;
   background-color: #CC0600;
   color: white;
   border-radius: 3%;
-
 }
 
 .menu-content {
   width: 100%;
   height: 47px;
   background-color:#F8F8F8;
-  /* border: 1px yellow solid; */
 }
-
 
 .menu-elements {
   width: auto;
@@ -525,7 +531,6 @@ padding: 5px 11px;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  margin-left: 9.19%;
 }
 
 .menu-elements ul {
@@ -550,14 +555,12 @@ padding: 5px 11px;
 
 .menu-elements li:first-child {
   border-bottom: 3px #5F605F solid;
-
 }
-
 .menu-elements li:first-child a:first-child {
   color: #020302;
-  font-weight: 500;
+  font-weight: 400;
+  transform: translateY(2px);
 }
-
 
 .menu-elements ul a {
   color: #616161;
@@ -577,5 +580,160 @@ padding: 5px 11px;
   right: 0;
   padding: 0px 24px;
   transform: scale(1.3);
+}
 
+/* Video main content  */
+
+
+.content-elements {
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #F1F1F1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.column-contents {
+  width: 73%;
+  height: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  /* background-color: rgb(230, 230, 230); */
+}
+
+
+.feature-video {
+  width: 100%;
+  height: 286px;
+  padding: 24px 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px #D7D8D7 solid;
+}
+
+.feature-video-text {
+  width: 400px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.feature-video-text span {
+  font-size: 14px;
+}
+
+.feature-video-text a {
+  font-size: 14px;
+  color: #065FD4;
+}
+
+.button-read-more {
+  font-size: 13px;
+  font-weight: 400;
+  align-self: flex-end;
+  color: #030303;
+
+}
+
+.title-video {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.title-video h1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #030303;
+}
+
+.title-video span {
+  font-size: 13px;
+  color: #606060;
+
+}
+
+
+
+
+
+
+
+
+
+
+.feature-channels {
+  width: 215px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  /* background-color: rgb(232, 231, 240); */
+}
+
+.feature-teenage {
+  width: auto;
+  height: auto;
+  padding: 24px 0px 0px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.feature-teenage-title {
+  padding-bottom: 24px;
+}
+
+
+.feature-teenage-title span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #606060;
+}
+
+.logo-feature-channel {
+  width: 187px;
+  height: auto;
+  margin-bottom: 8px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo-feature-channel img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.logo-feature-channel span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #030303;
+  padding-left: 8px;
+}
+
+.button-subscribe-feature-channel span {
+  font-size: 14px;
+  font-weight: 400;
+  
+  color: #747474;
+  padding: 4px 8px;
+  background-color:#F1F1F1;
 }
